@@ -1,0 +1,771 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 16px;
+    font-family:  Lato, Helvetica Neue, helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+a, .icon {
+    color: white;
+}
+
+/* Navigation bar styling */
+
+nav {
+    background-color: #23252b;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 0px 90px;
+}
+
+#page-title, .site-icon {
+    font-size: 1.4rem;
+    color: #F47521;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+#page-title:hover {
+    color: white;
+    background-color: inherit;
+}
+
+#page-title:hover img{
+    filter: brightness(0) invert(1);
+}
+
+.icon {
+    height: 25px;
+    padding-left: 10px;
+    padding-top: 6px;
+    color: white;
+} 
+
+.nav-left, .nav-right {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.nav-left li a, .nav-right li a{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    height: 30px;
+}
+
+.nav-left li a:hover, .nav-right li a:hover {
+    background-color: #141519;
+}
+
+.dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: #141519;
+    top: 60px;
+    padding: 0;
+}
+
+.dropdown li a {
+    font-size: 0.9rem;
+    padding: 10px 20px;
+}
+.browse-drop-content {
+    display: none;
+    background-color: #141519;
+    flex-direction: row;
+    position: absolute;
+    padding: 5px;
+}
+.drop-column-one {
+    border-right: 2px solid rgb(61, 56, 56);
+}
+
+.browse-drop-content ul{
+    display: block;
+    padding: 0;
+}
+
+.browse-drop-content ul a{
+    width: 190px;
+    font-size: 0.9rem;
+    padding: 5px 10px 10px  10px;
+}
+
+.browse-drop-content ul a:hover {
+    background-color: #23252b;
+}
+
+.browse-drop-content ul div {
+    font-size: 0.9rem;
+    padding: 15px 0px 15px 10px;
+    color: gray;
+}
+
+.browse-hover:hover .browse-drop-content {
+    display: flex;
+}
+.news-dropdown {
+    display: none;
+    left: 341px;
+    width: 300px;
+    border-top: 10px solid #141519;
+    border-bottom: 10px solid #141519;
+}
+
+.news-hover:hover .news-dropdown {
+    display: block;
+}
+
+.news-dropdown li a:hover {
+    background-color: #23252b;
+}
+
+/* Main body with the image */
+
+.main {
+    padding-top: 50px;
+    /* width: 100%; */
+}
+
+.main-img {
+    position: relative;
+    float: right;
+    width: 75%;
+    height: 1000px;
+}
+
+.side {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.name-logo {
+    width: 400px;
+}
+
+.genre-info {
+    font-size: 1rem;
+    color: grey;
+    padding: 10px 0;
+}
+
+.anime-summary {
+    line-height: 25px;
+    color: #C4DADA;
+}
+
+.anime-info {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+    padding: 300px 80px 0px 80px;
+    top: 0;
+    background-color: black;
+    color: white;
+}
+
+.gradient {
+    background-image: linear-gradient(to left,  rgba(255, 0, 0, 0), rgb(0, 0, 0));
+    width: 100px;
+    height: 1000px;
+}
+
+/* Watch and bookmark button styling */
+
+.click-more-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.watch-button {
+    color: black;
+    background-color: #F47521;
+    width: 230px;
+    height: 40px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+}
+
+.fa-play {
+    padding-right: 7px;
+    color: black;
+}
+
+.bookmark .fa-bookmark {
+    color: #F47521;
+}
+
+.bookmark {
+    border: 2px solid #F47521;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.watch-button:hover {
+    background-color: #fd7d27;
+    cursor: pointer;
+}
+
+.bookmark:hover {
+    border-color: #fd7d27;
+    cursor: pointer;
+}
+
+.bookmark:hover .fa-bookmark {
+    color: #fd7d27;
+}
+
+/* Styling for sliding cards */
+
+.gradient-layer {
+    background-image: linear-gradient(to bottom,  rgba(255, 0, 0, 0), rgb(0, 0, 0));
+    width: 100%;
+    height: 200px;
+    margin-top: 800px;
+    z-index: 1;
+    position: relative;
+}
+
+.outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    z-index: 1;
+    top: 900px;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 90%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column
+}
+
+.card-heading {
+    color: white;
+    font-size: 25px;
+}
+
+.card-point {
+    color: gray;
+    padding: 10px 0 20px 0;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    overflow: auto;
+}
+
+/* Hiding overflow */
+
+.card-container::-webkit-scrollbar { /* chrome, safari, opera */
+    display: none;
+}
+
+.card-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+
+/* Card main */
+
+.card {
+    position: relative;
+}
+
+.card-img {
+    width: 268px;
+    height: 405px;
+    object-fit: cover;
+    object-position: 23% 50%;
+}
+
+.card-title {
+    color: white;
+    font-size: 0.9rem;
+}
+
+.card-lang {
+    color: gray;
+    font-size: 0.8rem;
+    padding: 9px 0;
+    font-weight: bold;
+}
+
+/* Stylng card overlay */
+
+.card-overlay {
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0px 0 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 93%;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+}
+
+.card-over-title, .card-rating {
+    font-size: 1rem;    
+    color: white;
+}
+
+.card-season {
+    color: gray;
+    font-size: 0.9rem;
+    padding: 10px 0;
+    line-height: 20px;
+}
+
+.card-descp {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.card-icons {
+    display: flex;
+    padding-top: 230px;
+    padding-left: 5px;
+    gap: 20px;
+}
+
+.card-icons i {
+    color: #F47521;
+}
+
+/* Display card overlay on hover */
+
+.card:hover .card-overlay {
+    cursor: pointer;
+    opacity: 1;
+}
+
+/* other similar card section extra */
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+}
+
+.container-separation {
+    padding-top: 100px;
+}
+
+/* Styling banners */
+
+.img-banner {
+    height: 458px;
+    width: 1356px;
+    margin-top: 80px;
+}
+
+/* Quick recommendation styling */
+
+.recommend {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin-top: 100px;
+    color: white;
+}
+
+.recommend img {
+    height: 360px;
+    width: 638px;
+}
+
+.recommend-descp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    padding-left: 20px;
+}
+
+.recommend-descp h1 {
+    font-size: 2rem;
+}
+
+.recommend-descp p:nth-child(1) {
+    padding: 5px 0;
+}
+
+.recommend-descp p:nth-child(3) { /* Second child selector */
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.button-with-bookmark {
+    padding-top: 0;
+}
+.bookmark-spelled {
+    display: flex;
+    align-items: center;
+    width: 200px;
+}
+
+.bookmark-spelled p {
+    padding-left: 5px;
+    color: #fd7d27;
+    font-weight: bold;
+}
+
+/* New updates styling */
+
+.new-update {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.new-update h1, .new-update i {
+    font-size: 1.4rem;
+}
+
+.new-update p {
+    font-size: 0.8rem;
+}
+
+.update-today {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px 0;
+    gap: 26px;
+}
+
+.today-cells {
+    width: 32%;
+    display: flex;
+    gap: 20px;
+    position: relative;
+    transition: transform 0.5s;
+}
+
+.today-cells img{
+    width: 153px;
+    height: 88px;
+}
+
+.today-cells:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    
+
+}
+
+.cell-time {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: aqua;
+    font-size: 0.9rem;
+}
+
+.cell-descp {
+    display: flex;
+    flex-direction: column;
+}
+
+.cell-descp h3 {
+    font-size: 0.9rem;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.show-more-button {
+    width: 40%;
+    height: 45px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    background-color: #213944;
+    border: none;
+}
+
+.show-more-button:hover {
+    cursor: pointer;
+    background-color: #375461;
+}
+
+/* News section styling */
+
+.section-break {
+    padding-top: 100px;
+}
+
+.section-break-bg {
+    position: relative;
+}
+
+.orange-bg {
+    width: 2000px;
+    height: 840px;
+    overflow: hidden;
+}
+
+.leaning-hime-img {
+    position: absolute;
+    width: 326px;
+    height: 762px;
+    top: 5%;
+    left: 0%;
+}
+
+.news-yuzu-img {
+    position: absolute;
+    width: 213px;
+    height: 164px;
+    top: 60%;
+    right: 8%;
+}
+
+.main-news-container {
+    position: absolute;
+    background-color: black;
+    width: 1380px;
+    height: 788px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.news-padding {
+    padding: 40px;
+}
+
+.news-heading {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-section {
+    display: flex;
+
+}
+
+.side-news-container {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 30px;
+}
+
+.side-news {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.side-news img {
+    width: 307px;
+    height: 172px;
+}
+
+.side-news p {
+    font-size: 0.8rem;
+    color: gray;
+    line-height: 20px;
+}
+
+.center-news-container .heading {
+    margin-bottom: 30px;
+}
+
+.center-news {
+    display: flex;
+    gap: 30px;
+}
+
+.center-news-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.center-news-cells {
+    display: flex;
+    gap: 10px;
+}
+
+.center-news-cells:hover {
+    cursor: pointer;
+}
+
+.center-news-cells img {
+    width: 140px;
+    height: 79px;
+}
+
+.center-news-descp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.center-news-descp p{
+    font-size: 0.8rem;
+    color: gray;
+    line-height: 20px;
+}
+/* Styling footer */
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+.footer-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    gap: 20px;
+    padding-top: 100px;
+}
+
+.footer-top img {
+    width: 249px;
+    height: 94px;
+}
+
+.footer-top p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.footer-top button {
+    background-color: transparent;
+    border-color: #fd7d27;
+    color: #fd7d27;
+    font-size: 1.1rem;
+    width: 120px;
+    padding: 10px 0;
+}
+
+.footer-size {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.footer-info-container {
+    background-image: linear-gradient(to bottom, black, #213944);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 50px;
+}
+
+.footer-info {
+    display: flex;
+    gap: 100px;
+    padding-top: 70px;
+    justify-content: space-around;
+}
+
+.footer-info ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    gap: 15px;
+}
+
+.footer-info ul .footer-headings {
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.footer-info ul li {
+    font-size: 0.85rem;
+    color: gray;
+}
+
+.footer-base {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer-collab {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-collab p:nth-child(1) {
+    border-right: 1px solid rgb(117, 115, 115);
+    padding-right: 10px;
+}
+
+.footer-collab p:nth-child(2) {
+    padding-left: 10px;
+}
+
+#dropdown {
+    width: 140px;
+    height: 33px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+
+#dropdown:hover {
+    background-color: #23252b;
+    cursor: pointer;
+}
+
+#dropdown option {
+    color: gray;
+    background-color: #23252B;
+}
