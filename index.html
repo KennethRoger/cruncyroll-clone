@@ -13,6 +13,7 @@
         <nav>
             <ul>
                 <div class="nav-left">
+                    <li class="nav-bar"><i class="fa-solid fa-bars"></i></li>
                     <li><a href="" id="page-title"><img style="width: 30px; height: 30px;" src="assests/icons/icons8-crunchyroll-48.png" alt="Crunchyroll icon">Crunchyroll</a></li>
                     <li class="browse-hover">
                         <a href="">Browse<i class="fa-solid fa-caret-down icon"></i></a>
@@ -53,7 +54,7 @@
                             </ul>
                         </div>
                     </li>
-                    <li><a href="">Games</a></li>
+                    <li class="games"><a href="">Games</a></li>
                     <!-- Dropdown nested list -->
                     <li class="news-hover">
                         
@@ -74,26 +75,29 @@
         </nav>
 
         <main>
+            <!-- MAIN -->
             <div class="main">
-                <!-- Main image -->
-                <img class="main-img" src="assests/images/myheroacademia.webp" alt="my hero academia image">
-                <!-- Side info -->
-                <aside class="side">
-                    <div class="anime-info">
-                        <img class="name-logo" src="assests/images/mhalogo.webp" alt="my hero academia logo">
-                        <p class="genre-info">Sub | Dub &#9670; Action, Fantasy, Shonen</p>
-                        <p class="anime-summary">Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no superpowers. That’s right, in a world where eighty percent of the population has some kind of super-powered “quirk,” Izuku was unlucky enough to be born completely normal. But that’s not enough...</p>
-                        <div class="click-more-info">
-                            <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
-                            <div class="bookmark"><i class="fa-regular fa-bookmark"></i></div>
+                 <div class="main-carousel">
+                    <!-- Side info -->
+                    <div class="side">
+                        <div class="anime-info">
+                            <img class="name-logo" src="assests/images/mhalogo.webp" alt="my hero academia logo">
+                            <p class="genre-info">Sub | Dub &#9670; Action, Fantasy, Shonen</p>
+                            <p class="anime-summary">Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no superpowers. That’s right, in a world where eighty percent of the population has some kind of super-powered “quirk,” Izuku was unlucky enough to be born completely normal. But that’s not enough...</p>
+                            <div class="click-more-info-main">
+                                <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
+                                <div class="bookmark"><i class="fa-regular fa-bookmark"></i></div>
+                            </div>
+                            <div class="gradient"></div>
                         </div>
                     </div>
-                    <div class="gradient"></div>
-                </aside>
+                    <!-- Main image -->
+                    <img class="main-img" src="assests/images/myheroacademia.webp" alt="my hero academia image">
+                    <div class="gradient-layer"></div>
+                </div>
                 <!-- Scroll card 1 -->
                 <!-- A container for indetation -->
-                <div class="gradient-layer"></div>
-                <div class="outer-container">
+                <div class="outer-container container-separation">
                     <div class="container">
                         <h1 class="card-heading">July 2024 Simulcasts</h1>
                         <p class="card-point">Find the best new and continuing simulcasts here!</p>
@@ -510,15 +514,19 @@
                 </div>
 
                 <!-- Recommmendation 1 -->
+
                 <div class="recommend">
-                    <img src="assests/images/demonslayer.avif" alt="demon slayer">
-                    <div class="recommend-descp">
-                        <h1>Demon Slayer: Kimetsu no Yaiba</h1>
-                        <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
-                        <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
-                        <div class="click-more-info button-with-bookmark">
-                            <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
-                            <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                    <div class="recommend-main">
+                        <img class="rcmd-img-1" src="assests/images/demonslayer.avif" alt="demon slayer">
+                        <img class="rcmd-img-2" src="assests/images/small_img/demonslayersmall.avif" alt="demon slayer">
+                        <div class="recommend-descp">
+                            <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                            <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
+                            <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
+                            <div class="click-more-info button-with-bookmark">
+                                <button class="watch-button watch-button-2"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
+                                <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -605,15 +613,19 @@
                         <button class="show-more-button">SHOW MORE</button>
                     </div>
                 </div> 
+                <!-- Recommendation 2 -->
                 <div class="recommend">
-                    <img src="assests/images/mharecommend.avif" alt="my hero academia">
-                    <div class="recommend-descp">
-                        <h1>My Hero Academia</h1>
-                        <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
-                        <p>Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no superpowers. That’s right, in a world where eighty percent of the population has...</p>
-                        <div class="click-more-info button-with-bookmark">
-                            <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
-                            <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                    <div class="recommend-main">
+                        <img class="rcmd-img-1" src="assests/images/mharecommend.avif" alt="my hero academia">
+                        <img class="rcmd-img-2" src="assests/images/small_img/mhasmsall.jpeg" alt="my hero academia">
+                        <div class="recommend-descp">
+                            <h1>My Hero Academia</h1>
+                            <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
+                            <p>Izuku has dreamt of being a hero all his life—a lofty goal for anyone, but especially challenging for a kid with no superpowers. That’s right, in a world where eighty percent of the population has...</p>
+                            <div class="click-more-info button-with-bookmark">
+                                <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
+                                <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -621,119 +633,119 @@
 
             <!-- News section -->
             <section class="section-break main-section">
-                <div class="section-break-bg">
-                    <img class="orange-bg" src="assests/images/separationbreakbg.jpg" alt="orange design background">
-                    <img class="leaning-hime-img" src="assests/images/leaning_hime.png" alt="leaning hime">
-                    <img src="assests/images/news_yuzu.png" alt="news yuzu" class="news-yuzu-img">
-                    <div class="main-news-container">
-                        <div class="news-padding">
-                            <div class="news-heading">
-                                <h1 class="card-heading"><i class="fa-solid fa-bullhorn" style="padding-bottom: 15px"></i> Crunchyroll News</h1>
-                                <p style="color: gray; font-size: 0.9rem; font-weight: bold;">VIEW ALL <i class="fa-solid fa-greater-than" style="color: gray;"></i></p>
-                            </div>
-                            <div class="news-section">
-                                <div class="side-news-container">
-                                    <h2>Top News</h2>
-                                    <div class="side-news">
-                                        <img src="assests/images/random-filter.webp" alt="Kingdom live action">
-                                        <h2>Japan Box Office: Fourth Live-Action Kingdom Film Makes Record-Breaking No.1 Debut</h2>
-                                        <p>Jul 17, 2024 6:44am GMT +5:30<br />by Mikikazu komatsu</p>
-                                    </div>
-                                    <div class="side-news">
-                                        <img src="assests/images/random-filter.webp" alt="Kingdom live action">
-                                        <h2>Japan Box Office: Fourth Live-Action Kingdom Film Makes Record-Breaking No.1 Debut</h2>
-                                        <p>Jul 17, 2024 6:44am GMT +5:30<br />by Mikikazu komatsu</p>
-                                    </div>
+                <img class="orange-bg" src="assests/images/separationbreakbg.jpg" alt="orange design background">
+                        <div class="news-section">
+                            <div class="news-elements">
+                                <img class="leaning-hime-img" src="assests/images/leaning_hime.png" alt="leaning hime">
+                                <img src="assests/images/news_yuzu.png" alt="news yuzu" class="news-yuzu-img">
+                                <div class="news-heading">
+                                    <h1 class="card-heading"><i class="fa-solid fa-bullhorn" style="padding-bottom: 15px"></i> Crunchyroll News</h1>
+                                    <p style="color: gray; font-size: 0.9rem; font-weight: bold;">VIEW ALL <i class="fa-solid fa-greater-than" style="color: gray;"></i></p>
                                 </div>
-                                <div class="center-news-container">
-                                    <h2 class="heading">Latest</h2>
-                                    <div class="center-news">
-                                        <div class="center-news-section">
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
-                                                </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
-                                                </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
-                                                </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
-                                                </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
-                                                </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
-                                                </div>
-                                            </div>
+                                <div class="side-and-center">
+                                    <div class="side-news-container">
+                                        <h2 class="top-news-sm">Top News</h2>
+                                        <div class="side-news">
+                                            <img src="assests/images/random-filter.webp" alt="Kingdom live action">
+                                            <h2>Japan Box Office: Fourth Live-Action Kingdom Film Makes Record-Breaking No.1 Debut</h2>
+                                            <p>Jul 17, 2024 6:44am GMT +5:30<br />by Mikikazu komatsu</p>
                                         </div>
-                                        <div class="center-news-section">
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                        <div class="side-news">
+                                            <img src="assests/images/random-filter.webp" alt="Kingdom live action">
+                                            <h2>Japan Box Office: Fourth Live7Action Kingdom Film Makes Record-Breaking No.1 Debut</h2>
+                                            <p>Jul 17, 2024 6:44am GMT +5:30<br />by Mikikazu komatsu</p>
+                                        </div>
+                                    </div>
+                                    <div class="center-news-container">
+                                        <h2 class="heading">Latest</h2>
+                                        <div class="center-news">
+                                            <div class="center-news-section">
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
                                                 </div>
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
+                                                </div>
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
+                                                </div>
+                                                <!-- <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
+                                                </div>
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
+                                                </div>
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
+                                                </div> -->
                                             </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                            <div class="center-news-section md-excess-news">
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                <div class="center-news-cells md-excess-news">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                <div class="center-news-cells">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                <!-- <div class="center-news-cells md-excess-news">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <div class="center-news-cells">
-                                                <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
-                                                <div class="center-news-descp">
-                                                    <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
-                                                    <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                <div class="center-news-cells md-excess-news">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
                                                 </div>
+                                                <div class="center-news-cells md-excess-news">
+                                                    <img src="assests/images/wistoriaw&m.webp" alt="wand and magic">
+                                                    <div class="center-news-descp">
+                                                        <h2><b>Wistoria: Wand and Sword English Dub...</b></h2>
+                                                        <p>July 19. 2024 11:30pm GMT +5:30<br />by Liam Dempsey</p>
+                                                    </div>
+                                                </div> -->
                                             </div>
                                         </div>
                                     </div>
@@ -1020,29 +1032,35 @@
                         </div>
                     </div>
                 </div>
-                <!-- Recommendation -->
+                <!-- Recommendation 3 -->
                 <div class="recommend">
-                    <img src="assests/images/demonslayer.avif" alt="demon slayer">
-                    <div class="recommend-descp">
-                        <h1>Demon Slayer: Kimetsu no Yaiba</h1>
-                        <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
-                        <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
-                        <div class="click-more-info button-with-bookmark">
-                            <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
-                            <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                    <div class="recommend-main">
+                        <img class="rcmd-img-1" src="assests/images/demonslayer.avif" alt="demon slayer">
+                        <img class="rcmd-img-2" src="assests/images/small_img/demonslayersmall.avif" alt="demon slayer">
+                        <div class="recommend-descp">
+                            <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                            <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
+                            <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
+                            <div class="click-more-info button-with-bookmark">
+                                <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
+                                <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Recommendation -->
+                <!-- Recommendation 4 -->
                 <div class="recommend">
-                    <img src="assests/images/demonslayer.avif" alt="demon slayer">
-                    <div class="recommend-descp">
-                        <h1>Demon Slayer: Kimetsu no Yaiba</h1>
-                        <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
-                        <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
-                        <div class="click-more-info button-with-bookmark">
-                            <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
-                            <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                    <div class="recommend-main">
+                        <img class="rcmd-img-1" src="assests/images/mharecommend.avif" alt="my hero academia">
+                        <img class="rcmd-img-2" src="assests/images/small_img/mhasmsall.jpeg" alt="my hero academia">
+                        <div class="recommend-descp">
+                            <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                            <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
+                            <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
+                            <div class="click-more-info button-with-bookmark">
+                                <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
+                                <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1324,14 +1342,17 @@
                 <!-- Recommendation -->
 
                 <div class="recommend">
-                    <img src="assests/images/demonslayer.avif" alt="demon slayer">
-                    <div class="recommend-descp">
-                        <h1>Demon Slayer: Kimetsu no Yaiba</h1>
-                        <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
-                        <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
-                        <div class="click-more-info button-with-bookmark">
-                            <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
-                            <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                    <div class="recommend-main">
+                        <img class="rcmd-img-1" src="assests/images/demonslayer.avif" alt="demon slayer">
+                        <img class="rcmd-img-2" src="assests/images/small_img/demonslayersmall.avif" alt="demon slayer">
+                        <div class="recommend-descp">
+                            <h1>Demon Slayer: Kimetsu no Yaiba</h1>
+                            <p><span style="color: aqua;">Series</span><span style="color: gray;">&#9670; Sub | Dub</span></p>
+                            <p>It is the Taisho Period in Japan. Tanjiro, a kindhearted boy who sells charcoal for a living, finds his family slaughtered by a demon. To make matters worse, his younger sister Nezuko, the sole...</p>
+                            <div class="click-more-info button-with-bookmark">
+                                <button class="watch-button"><i class="fa-solid fa-play"></i>START WATCHING EP 1</button>
+                                <div class="bookmark bookmark-spelled"><i class="fa-regular fa-bookmark"></i><p>ADD TO WATCHLIST</p></div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1479,7 +1500,7 @@
                 </div>
             </div>
         </main>
-
+        <!-- FOOTER -->
         <footer>
             <div class="footer-top">
                 <img src="assests/images/yuzu.png" alt="yuzu sleeping">
@@ -1511,7 +1532,7 @@
                             <li>About</li>
                             <li>Help Center</li>
                         </ul>
-                        <ul>
+                        <ul class="account-footer"> 
                             <li class="footer-headings">Account</li>
                             <li>Create Account</li>
                             <li>Release Calander</li>
